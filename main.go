@@ -8,7 +8,7 @@ type Conta struct {
 }
 
 func main() {
-	conta1 := Conta{nome: "teste", saldo: 35.2} //var de tipo valor
+	conta1 := Conta{nome: "teste", saldo: 35.2} // var de tipo valor
 	conta2 := Conta{nome: "teste2", saldo: 30}  // var de tipo valor
 	conta3 := new(Conta)                        // criando dessa forma acaba criando um ponteiro
 	conta3.nome = "teste3"
@@ -22,6 +22,7 @@ func main() {
 	fmt.Println(conta2)
 	fmt.Println(&conta3)
 	fmt.Println(*conta3)
+	fmt.Println("Teste Transferencia")
 }
 
 func (c *Conta) deposito(value float64) {
